@@ -1,0 +1,315 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+        "title": "API do SysPPT",
+        "description": "API para gerenciar as funcionalidades",
+        "version": "1.0.0"
+    },
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "paths": {
+        "/identification/": {
+            "post": {
+                "summary": "Criar identificação",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Identification"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Identificação criada com sucesso"
+                    }
+                }
+            }
+        },
+        "/identification/{id}": {
+            "put": {
+                "summary": "Atualizar identificação",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "number"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Identification"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Identificação atualizada com sucesso"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Excluir identificação",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "number"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Identificação excluída com sucesso"
+                    }
+                }
+            },
+            "get": {
+                "summary": "Obter detalhes da identificação",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "number"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Detalhes da identificação"
+                    }
+                }
+            }
+        },
+        "/identification/all": {
+            "get": {
+                "summary": "Obter todas as identificações",
+                "responses": {
+                    "200": {
+                        "description": "Lista de todas as identificações"
+                    }
+                }
+            }
+        },
+        "/identification/{idUser}": {
+            "get": {
+                "summary": "Obter identificações de um usuário",
+                "parameters": [
+                    {
+                        "name": "idUser",
+                        "in": "path",
+                        "required": true,
+                        "type": "number"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Lista de identificações do usuário"
+                    }
+                }
+            }
+        },
+        "/identification/all/{idUser}": {
+            "get": {
+                "summary": "Obter todas as identificações de um usuário",
+                "parameters": [
+                    {
+                        "name": "idUser",
+                        "in": "path",
+                        "required": true,
+                        "type": "number"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Lista de todas as identificações do usuário"
+                    }
+                }
+            }
+        },
+        "/identification/recordCount/{idUser}": {
+            "get": {
+                "summary": "Obter contagem de registros de identificações de um usuário",
+                "parameters": [
+                    {
+                        "name": "idUser",
+                        "in": "path",
+                        "required": true,
+                        "type": "number"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Contagem de registros de identificações do usuário"
+                    }
+                }
+            }
+        },
+        "/week/": {
+            "post": {
+                "summary": "Criar semana",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Week"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Semana criada com sucesso"
+                    }
+                }
+            }
+        },
+        "/week/autoCreate": {
+            "post": {
+                "summary": "Criar semana automaticamente",
+                "responses": {
+                    "200": {
+                        "description": "Semana criada automaticamente com sucesso"
+                    }
+                }
+            }
+        },
+        "/week/{id}": {
+            "put": {
+                "summary": "Atualizar semana",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Week"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Semana atualizada com sucesso"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Excluir semana",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Semana excluída com sucesso"
+                    }
+                }
+            }
+        },
+        "/week/all/{idIdentification}": {
+            "get": {
+                "summary": "Obter todas as semanas de uma identificação",
+                "parameters": [
+                    {
+                        "name": "idIdentification",
+                        "in": "path",
+                        "required": true,
+                        "type": "number"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Lista de todas as semanas da identificação"
+                    }
+                }
+            }
+        },
+        "definitions": {
+            "Identification": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "number"
+                    },
+                    "teacher": {
+                        "type": "string"
+                    },
+                    "course": {
+                        "type": "string"
+                    },
+                    "year": {
+                        "type": "number"
+                    },
+                    "team": {
+                        "type": "string"
+                    },
+                    "discipline": {
+                        "type": "string"
+                    },
+                    "totalWorkload": {
+                        "type": "number"
+                    },
+                    "period": {
+                        "type": "number"
+                    },
+                    "courseProgram": {
+                        "type": "string"
+                    },
+                    "objective": {
+                        "type": "string"
+                    },
+                    "scope": {
+                        "type": "string"
+                    },
+                    "idUser": {
+                        "type": "number"
+                    },
+                    "idCourse": {
+                        "type": "number"
+                    }
+                }
+            },
+            "Week": {
+                "type": "object",
+                "properties": {
+                    "idIdentification": {
+                        "type": "number"
+                    },
+                    "startDate": {
+                        "type": "date"
+                    },
+                    "programContent": {
+                        "type": "string"
+                    },
+                    "methodology": {
+                        "type": "string"
+                    },
+                    "assessment": {
+                        "type": "string"
+                    },
+                    "numberClasses": {
+                        "type": "number"
+                    }
+                }
+            }
+        }
+    }
+}

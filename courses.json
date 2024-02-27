@@ -1,0 +1,118 @@
+{
+    "courses": [
+        {
+            "name": "Sistemas de Informação",
+            "disciplines": [
+                "Introdução a Programação",
+                "Ética e Legislação",
+                "Introdução a Computação",
+                "Lógica Matemática",
+                "Português Instrumental",
+                "Algoritmos e Estrutura de Dados I",
+                "Fundamentos de Matemática",
+                "Fundamentos de Sistemas de Informação",
+                "Inglês Instrumental",
+                "Sociologia",
+                "Teorias da Administração",
+                "Álgebra Linear",
+                "Algoritmos e Estrutura de Dados II",
+                "Banco de Dados I",
+                "Cálculo Diferencial e Integral I",
+                "Gestão de Pessoas",
+                "Metodologia Científica",
+                "Algoritmos e Estrutura de Dados III",
+                "Banco de Dados II",
+                "Cálculo Diferencial e Integral II",
+                "Engenharia de Software I",
+                "Interface Usuário Máquina",
+                "Linguagem de Programação I",
+                "Redes de Computadores I",
+                "Contabilidade Básica",
+                "Engenharia de Software II",
+                "Linguagem de Programação II",
+                "Matemática Discreta",
+                "Redes de Computadores II",
+                "Sistemas Operacionais",
+                "Desenvolvimento WEB I",
+                "Estatística Básica",
+                "Gestão da Informação e do Conhecimento",
+                "Gestão de Processos",
+                "Pesquisa Operacional",
+                "Redes de Computadores III",
+                "Desenvolvimento WEB II",
+                "Empreendedorismo e Plano de Negócios",
+                "Gerência de Projetos",
+                "Inteligência Artificial",
+                "Trabalho de Conclusão de Curso I",
+                "Tecnologia e Sociedade",
+                "Multimídia",
+                "Segurança e Auditoria de Sistemas",
+                "Trabalho de Conclusão de Curso II",
+                "Tópicos em Desenvolvimento Para Dispositivis Móveis",
+                "Tópico em Mineração de Dados",
+                "Seminários",
+                "Tópicos Especiais em Desenvolvimento WEB",
+                "Introdução a Linguagem R"
+            ]
+        },
+        {
+            "name": "Administração",
+            "disciplines": [
+                "Contabilidade Geral",
+                "Economia I",
+                "Matemática Aplicada",
+                "Português Instrumental",
+                "Princípios da Administração I",
+                "Psicologia Aplicada à Administração"
+            ]
+        },
+        {
+            "name": "Agronomia",
+            "disciplines": [
+                "Estatística Básica"
+            ]
+        },
+        {
+            "name": "Engenharia Florestal",
+            "disciplines": [
+                "Cálculo Diferencial e Integral I"
+            ]
+        },
+        {
+            "name": "Ciências Biologicas",
+            "disciplines": [
+                "Biologia"
+            ]
+        },
+        {
+            "name": "Matemática",
+            "disciplines": [
+                "Física I"
+            ]
+        },
+        {
+            "name": "Técnico em Informática",
+            "disciplines": [
+                "Informática"
+            ]
+        },
+        {
+            "name": "Técnico em Nutrição e Dietética",
+            "disciplines": [
+                "Nutrição"
+            ]
+        },
+        {
+            "name": "Técnico em Agropecuária",
+            "disciplines": [
+                "Agropecuária"
+            ]
+        },
+        {
+            "name": "Técnico em Agrimensura",
+            "disciplines": [
+                "Agrimensura"
+            ]
+        }
+    ]
+}
